@@ -7,7 +7,7 @@ export default function CreditCard(props) {
         <div style={{background: `${props.bgColor}`}} className='credit'>
             <div style={{color: `${props.color}`}}>
             <div className="logo">
-            <p>{props.type}</p>
+            <img src={props.type === 'Visa' ? visa : mastercard} height="50" width="75" />
             </div>
             <p>&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull; {digit} </p>
             <p>Expires: {props.expirationMonth} / {props.expirationYear}</p>
@@ -18,6 +18,3 @@ export default function CreditCard(props) {
     </div>
   )
 }
-
-
-{/* <img src={props.type=== 'Visa'? visa : mastercard} /> */}

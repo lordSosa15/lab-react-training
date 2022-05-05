@@ -32,5 +32,18 @@ const Rating = ({children}) => {
 
     )
 }
+// let wholeNum = Math.round(props.children)
+// let fullStar = '★';
+// let emptyStar = '☆';
+
+// let stars = fullStar.repeat(wholeNum);
+//stars += emptyStar.repeat(5- wholeNum)
+
+
+
+
+
+
+
 
 export default Rating
